@@ -142,3 +142,15 @@ inputAssunto.addEventListener('keyup' , () => {
     labelAssunto.setAttribute('style', 'color: green;');
   }
 });
+
+inputMensagem.addEventListener('keyup' , () => {
+  if(inputMensagem.value[0] == ' '){
+    inputMensagem.value = '';
+  } else if(inputMensagem.value.length < 20){
+    inputMensagem.setAttribute('style', 'outline-color: red;');
+    labelMensagem.setAttribute('style', 'color: red;');
+  } else {
+    inputMensagem.setAttribute('style', 'outline-color: green;');
+    labelMensagem.setAttribute('style', 'color: green;');
+  }
+});
