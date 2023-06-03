@@ -119,3 +119,15 @@ inputPais.addEventListener('keyup' , () => {
   }
 });
 
+inputEstado.addEventListener('keyup' , () => {
+  if(inputEstado.value[0] == ' '){
+    inputEstado.value = '';
+  } else if(inputEstado.value.length < 3){
+    inputEstado.setAttribute('style', 'outline-color: red;');
+    labelEstado.setAttribute('style', 'color: red;');
+  } else {
+    inputEstado.setAttribute('style', 'outline-color: green;');
+    labelEstado.setAttribute('style', 'color: green;');
+  }
+});
+
