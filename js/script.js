@@ -96,3 +96,13 @@ inputEmail.addEventListener('keyup' , () => {
     labelEmail.setAttribute('style', 'color: green;');
   }
 });
+
+inputConfirmarEmail.addEventListener('keyup' , () => {
+  if(inputEmail.value != inputConfirmarEmail.value){
+    inputConfirmarEmail.setAttribute('style', 'outline-color: red;');
+    labelConfirmarEmail.setAttribute('style', 'color: red;');
+  } else {
+    inputConfirmarEmail.setAttribute('style', 'outline-color: green;');
+    labelConfirmarEmail.setAttribute('style', 'color: green;');
+  }
+});
