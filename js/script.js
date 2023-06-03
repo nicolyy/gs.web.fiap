@@ -87,8 +87,12 @@ inputNumero.addEventListener('keyup' , () => {
   }
 });
 
-inputEmail.addEventListener('keyup' , () => {
-  if(inputEmail.value.length < 10 || inputEmail.value.includes('@') == false || inputEmail.value.includes('.') == false){
+inputEmail.addEventListener('keyup' , (event) => {
+  let letra = event.key;
+
+  if(letra == ' '){
+    inputEmail.value = '';
+  } else if(inputEmail.value.length < 10 || inputEmail.value.includes('@') == false || inputEmail.value.includes('.') == false){
     inputEmail.setAttribute('style', 'outline-color: red;');
     labelEmail.setAttribute('style', 'color: red;');
   } else {
@@ -97,8 +101,12 @@ inputEmail.addEventListener('keyup' , () => {
   }
 });
 
-inputConfirmarEmail.addEventListener('keyup' , () => {
-  if(inputEmail.value != inputConfirmarEmail.value){
+inputConfirmarEmail.addEventListener('keyup' , (event) => {
+  let letra = event.key;
+
+  if(letra == ' '){
+    inputConfirmarEmail.value = '';
+  } else if(inputEmail.value != inputConfirmarEmail.value){
     inputConfirmarEmail.setAttribute('style', 'outline-color: red;');
     labelConfirmarEmail.setAttribute('style', 'color: red;');
   } else {
@@ -152,5 +160,58 @@ inputMensagem.addEventListener('keyup' , () => {
   } else {
     inputMensagem.setAttribute('style', 'outline-color: green;');
     labelMensagem.setAttribute('style', 'color: green;');
+  }
+});
+
+// Validações Ativas
+
+addEventListener('click', (event) => {
+  const divStatus = document.querySelector('#status');
+  if(event.target.id == 'btnSubmit'){
+    // Nome
+    if(inputNome.value.length < 3){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Primeiro Nome deve conter no mínimo 3 caracteres</strong></span>`;
+      // Sobrenome
+    } else if(inputSobrenome.value.length < 3){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Sobrenome deve conter no mínimo 3 caracteres</strong></span>`;
+      // DDD
+    } else if(inputDDD.value.length < 2){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo DDD deve conter no mínimo 2 caracteres</strong></span>`;
+      // Número
+    } else if(inputNumero.value.length < 8){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Número deve conter no mínimo 8 caracteres</strong></span>`;
+      // Email
+    } else if(inputEmail.value.length < 10 || inputEmail.value.includes('@') == false || inputEmail.value.includes('.') == false){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Email deve conter no mínimo 10 caracteres e conter '@' e '.'</strong></span>`;
+      // Confirmar Email
+    } else if(inputEmail.value != inputConfirmarEmail.value){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Confirmar Email deve ser igual ao campo Email</strong></span>`;
+      // País
+    } else if(inputPais.value.length < 3){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo País deve conter no mínimo 3 caracteres</strong></span>`;
+      // Estado
+    } else if(inputEstado.value.length < 3){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Estado deve conter no mínimo 3 caracteres</strong></span>`;
+      // Assunto
+    } else if(inputAssunto.value.length < 5){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Assunto deve conter no mínimo 5 caracteres</strong></span>`;
+      // Mensagem
+    } else if(inputMensagem.value.length < 20){
+      divStatus.setAttribute('style', 'color: #ff0000;');
+      divStatus.innerHTML = `<span><strong>O campo Mensagem deve conter no mínimo 20 caracteres</strong></span>`;
+      // Sucesso
+    } else {
+      divStatus.setAttribute('style', 'color: #00ff00;');
+      divStatus.innerHTML = `<span><strong>Formulário enviado com sucesso!</strong></span>`;
+    }
   }
 });
