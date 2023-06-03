@@ -131,3 +131,14 @@ inputEstado.addEventListener('keyup' , () => {
   }
 });
 
+inputAssunto.addEventListener('keyup' , () => {
+  if(inputAssunto.value[0] == ' '){
+    inputAssunto.value = '';
+  } else if(inputAssunto.value.length < 5){
+    inputAssunto.setAttribute('style', 'outline-color: red;');
+    labelAssunto.setAttribute('style', 'color: red;');
+  } else {
+    inputAssunto.setAttribute('style', 'outline-color: green;');
+    labelAssunto.setAttribute('style', 'color: green;');
+  }
+});
