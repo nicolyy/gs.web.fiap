@@ -87,8 +87,12 @@ inputNumero.addEventListener('keyup' , () => {
   }
 });
 
-inputEmail.addEventListener('keyup' , () => {
-  if(inputEmail.value.length < 10 || inputEmail.value.includes('@') == false || inputEmail.value.includes('.') == false){
+inputEmail.addEventListener('keyup' , (event) => {
+  let letra = event.key;
+
+  if(letra == ' '){
+    inputEmail.value = '';
+  } else if(inputEmail.value.length < 10 || inputEmail.value.includes('@') == false || inputEmail.value.includes('.') == false){
     inputEmail.setAttribute('style', 'outline-color: red;');
     labelEmail.setAttribute('style', 'color: red;');
   } else {
@@ -97,8 +101,12 @@ inputEmail.addEventListener('keyup' , () => {
   }
 });
 
-inputConfirmarEmail.addEventListener('keyup' , () => {
-  if(inputEmail.value != inputConfirmarEmail.value){
+inputConfirmarEmail.addEventListener('keyup' , (event) => {
+  let letra = event.key;
+
+  if(letra == ' '){
+    inputConfirmarEmail.value = '';
+  } else if(inputEmail.value != inputConfirmarEmail.value){
     inputConfirmarEmail.setAttribute('style', 'outline-color: red;');
     labelConfirmarEmail.setAttribute('style', 'color: red;');
   } else {
