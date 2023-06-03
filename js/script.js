@@ -106,3 +106,16 @@ inputConfirmarEmail.addEventListener('keyup' , () => {
     labelConfirmarEmail.setAttribute('style', 'color: green;');
   }
 });
+
+inputPais.addEventListener('keyup' , () => {
+  if(inputPais.value[0] == ' '){
+    inputPais.value = '';
+  } else if(inputPais.value.length < 3){
+    inputPais.setAttribute('style', 'outline-color: red;');
+    labelPais.setAttribute('style', 'color: red;');
+  } else {
+    inputPais.setAttribute('style', 'outline-color: green;');
+    labelPais.setAttribute('style', 'color: green;');
+  }
+});
+
