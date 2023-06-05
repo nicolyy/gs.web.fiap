@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url(cabecalho.css);
+@import url(rodape.css);
+
+body{
+    background-color: #FDFFB0;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.container{
+    
+    background-color: #FDFFB0;
+
+    border-radius:30px;
+    border: solid #007922;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    width: 40%;
+    height: 60rem;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1%;
+
+}
+
+.item{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+
+    padding-left: 15%;
+    justify-content: center;
+    
+}
+
+label{
+    font-family:'Inter', sans-serif;
+    font-weight: bold;
+    color: #007922;
+    font-size: 90% ;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+input{
+    height: 1.5rem;
+    width: 80%;
+
+    background-color: #A6CE39;
+    border: solid 1px #007922;
+
+}
+
+input:focus{
+    border: solid 1px #007922;
+    outline: none;
+}
+.textarea{
+    width: 72%;
+    align-items: center;
+    padding-left: 0%;
+    padding-right: 10%;
+    display: inline;
+    flex-direction: row;
+
+    background-color: #A6CE39;
+    border: solid 1px #007922;
+
+
+    outline: none;
+
+   
+}
+
+input::placeholder{
+    color: #FDFFB0;
+    padding-left: 2%;
+}
+
+.textarea::placeholder{
+    color: #FDFFB0;
+    font-family:'Inter', sans-serif ;
+    padding-left: 2%;
+}
+
+.item-button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    background-color: #007922;
+    color: #FDFFB0;
+    font-family: 'Inter', sans-serif  ;
+    font-size: 1rem;
+    
+
+    width: 40%;
+    height: 3rem;
+    margin-top: 5%;
+
+    border-radius: 15px;
+    border: solid #007922;
+}
