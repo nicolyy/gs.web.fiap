@@ -166,3 +166,17 @@ ol{
     padding-right: 5%;
 }
 
+.item-img img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 30%;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+
+
