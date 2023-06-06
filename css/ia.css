@@ -2,21 +2,14 @@
 @import url(rodape.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
-body{
-    background-color: #C4F23F;
-    width: 100%;
-    margin: 0 auto
-}
+/* pagina ia*/
 
-.home-introducao{
-    margin-top: 10%;
-}
-.titulo{
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    color: #007922;
-    margin-bottom: 0%;
+body{
+    
+        background-color: #C4F23F;
+        width: 100%;
+        margin: 0 auto
+
     
 }
 
@@ -30,64 +23,6 @@ p{
     font-family: 'Inter', sans-serif;
     font-size: 100%;
 }
-
-.introducao{
-    margin-top: ;
-    margin-left: 15%;
-    width: 30%;
-    text-align: left;
-}
-
-.container-home{
-    display: flex;
-    margin: 20% 5% 5% 3%;
-    flex-wrap: wrap;
-    align-items: space-around;
-    flex-direction: row;
-    width: 90%;
-
-}
-
-.informe{
-    background-color: #FDFFB0;
-    text-align: center;
-
-    width: 40%;
-    margin-top: 5%;
-    margin-left: 5%;
-
-    padding: 2%;
-    
-    border-radius: 30px;
-
-}
-
-#informe-3{
-    width: 90%;
-    
-}
-
-/* imagem */
-.inicio{
-    width: 30%;
-    float: right;
-    margin: 0% 15% 10% 0%;
-}
-
-.btn-div{
-
-    background-color: #007922;
-    color: #ffffff;
-    border-radius: 30px;
-    padding: 2%  12% 2% 12%;
-    
-    
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-
-}
-
-/*pagina agricultura*/
 
 .fundo{
     background-color: #FDFFB0;
@@ -166,17 +101,39 @@ ol{
     padding-right: 5%;
 }
 
-.item-img img{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 
-    width: 30%;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
+.ia img{
+    display: flex;
+    width: 100%;
+    height: 25rem;
+
+    margin-bottom: 0%;
+
 }
 
+.ia-introducao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
+    background-color: #FDFFB0;
+    flex-direction: column;
+
+    width: 80%;
+    height: 12rem;
+    border-radius: 30px;
+
+    position: absolute;
+    top: 65%;
+    margin-left: 10%;
+}
+
+.ia-introducao p{
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin-bottom: 5%;
+    align-items: center;
+
+  
+}
