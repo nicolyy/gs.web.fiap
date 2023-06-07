@@ -178,5 +178,9 @@ ol{
     padding-right: 5%;
     margin-top: 5%;
 }
-
-
+.logo{
+    width: 10%;
+    float: left;
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+}
