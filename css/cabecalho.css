@@ -127,12 +127,6 @@
     }
 }
 
-
-.pages:hover{
-    transition: 0.5s;
-    background-color: #00962a;
-}
-
 .btn-div:hover{
     transition: 0.5s;
     background-color: #00962a;
