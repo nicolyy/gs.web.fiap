@@ -214,4 +214,5 @@ addEventListener('click', (event) => {
       divStatus.innerHTML = `<span><strong>Formulário enviado com sucesso!</strong></span>`;
     }
   }
+
 });
