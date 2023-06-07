@@ -33,14 +33,7 @@ p{
     
 }
 
-.container-agricultura{
-    flex-direction: column;
-    display: inline-flex;
-    align-items: center;
 
-    margin-top: 5%;
-    
-}
 
 .fundo p{
     width: 40%;
@@ -82,6 +75,7 @@ p{
 
 .item{
     padding: 2% 5% 2% 5%;
+   
 }
 
 .item-img{
@@ -95,7 +89,7 @@ ol{
 }
 
 .container-texto img{
-    width: 30%;
+    width: 20%;
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -113,19 +107,14 @@ ol{
 
 .ia-introducao{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:  #FDFFB0;
     flex-direction: column;
-
-    background-color: #FDFFB0;
-    flex-direction: column;
-
-    width: 80%;
-    height: 12rem;
     border-radius: 30px;
+    width: 80%;
 
-    position: absolute;
-    top: 65%;
+    align-items: center;
+    justify-content: center;
+    
     margin-left: 10%;
 }
 
