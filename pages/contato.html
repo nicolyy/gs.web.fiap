@@ -4,77 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
     <script src="../js/script.js" defer></script>
     <title>CONTATO</title>
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="agricultura.html">AGRICULTURA</a></li>
-                <li><a href="ia.html">IA</a></li>
-                <li><a href="cultivo.html">CULTIVO</a></li>
-                <li><a href="contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
+        
+        <div class="nav">
+            <nav>
+                <ul class="container-contato">
+                    <img class="logo "src="../img/logo.png" alt="">
+                    <li><a class="pages" href="../index.html">INICIO</a></li>
+                    <li><a class="pages" href="agricultura.html">AGRICULTURA</a></li>
+                    <li><a class="pages" href="ia.html">IA</a></li>
+                    <li><a class="pages" href="cultivo.html">CULTIVO</a></li>
+                    <li><a class="pages" href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div>
+    <section>
+
+    <div class="container">
     <form action="" method="" onsubmit="return false">
-        <div id="#">
+        <div class="item">
             <label for="idNome">Primeiro Nome</label>
             <input type="text" id="idNome" name="nome" placeholder="Digite o seu Primeiro Nome aqui">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idSobrenome">Sobrenome</label>
             <input type="text" id="idSobrenome" name="sobrenome" placeholder="Digite o seu sobrenome aqui">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idDDD">DDD</label>
             <input type="text" id="idDDD" name="ddd" placeholder="Digite o seu ddd aqui">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idNumero">Numero</label>
             <input type="text" id="idNumero" name="numero" placeholder="Digite seu numero aqui">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idEmail">Email:</label>
             <input type="email" id="idEmail" name="email" placeholder="email@exemplo.com.br">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idConfirmarEmail">Confirme o seu email:</label>
             <input type="email" id="idConfirmarEmail" name="email" placeholder="Confirme o seu email">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idPais">País</label>
             <input type="text" id="idPais" name="pais" placeholder="Digite seu pais">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idEstado">Estado</label>
             <input type="text" id="idEstado" name="estado" placeholder="Digite seu estado">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idAssunto">Assunto</label>
             <input type="text" id="idAssunto" name="assunto" placeholder="Qual o assunto?">
         </div>
 
-        <div id="#">
+        <div class="item">
             <label for="idMensagem">Mensagem:</label><br>
-            <textarea id="idMensagem" name="mensagem" placeholder="Digite sua mensagem aqui"  rows="10"></textarea>
+            <textarea class="textarea" id="idMensagem" name="mensagem" placeholder="Digite sua mensagem aqui"  rows="10"></textarea>
         </div>
 
-        <div id="#">
+        <div class="item-button">
             <button type="submit" id="btnSubmit">Enviar</button>
         </div>
         <div id="status">
@@ -82,25 +88,28 @@
         </div>
     </form>
     </div>
+</section>
 
     <footer>
-        <p>INTEGRANTES</p>
-        <nav>
-            <ul>
-                <li>NICOLY</li>
-                <li>RONALD</li>
-                <li>VITOR</li>
-                <li>GUSTAVO</li>
-                <li>NICOLY</li>
-            </ul>
-            <ul>
-                <li>RM 552410</li>
-                <li>RM 552364</li>
-                <li>RM 552228</li>
-                <li>RM 552466</li>
-                <li>RM 552579</li>
-            </ul>
-        </nav>
+        <div class="rodape"></div>
+            <p>INTEGRANTES</p>
+            <nav>
+                <ul class="lado1">
+                    <li class="nome">NICOLY</li>
+                    <li class="nome">RONALD</li>
+                    <li class="nome">VITOR</li>
+                    <li class="nome">GUSTAVO</li>
+                    <li class="nome">NICOLLY</li>
+                </ul>
+                <ul class="lado2">
+                    <li class="rm">RM 552410</li>
+                    <li class="rm">RM 552364</li>
+                    <li class="rm">RM 552228</li>
+                    <li class="rm">RM 552466</li>
+                    <li class="rm">RM 552579</li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     
 </body>

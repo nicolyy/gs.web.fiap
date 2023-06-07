@@ -1,0 +1,120 @@
+@import url(rodape.css);
+@import url(cabecalho.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+body{
+    
+    background-color: #C4F23F;
+    width: 100%;
+    margin: 0 auto
+
+}
+
+.fundo img{
+    display: flex;
+    width: 100%;
+    height: 25rem;
+
+    margin-bottom: 0%;
+    
+}
+
+.container-cultivo{
+    display: flex;
+    background-color:  #FDFFB0;
+    flex-direction: column;
+    border-radius: 30px;
+    width: 80%;
+
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: 10%;
+  
+
+}
+
+.container-cultivo p{
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    margin-bottom: 5%;
+    text-align: center;
+
+
+}
+.container-cultivo h2{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color:  #007922;
+
+
+
+}
+
+.section-introducao{
+    display: inline-block;
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.bloco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top : 5%;
+    margin-bottom: 10%;
+    width: 100%;
+
+}
+
+
+.tipo{
+    background-color: #007922;
+    border-radius: 30px;
+    width: 35%;
+    height: 40%;
+    text-align: center;
+    
+    margin: 2% 2% 2% 2%;
+}
+
+.bloco h2{
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+
+   
+
+
+}
+
+.bloco p{
+    color: #Ffffff;
+    font-family: 'Inter', sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+
+
+}
+
+.bloco img{
+    width: 30%;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+    float: left;
+    margin-left: 0.5rem;
+    padding-top: 0.5rem;
+}
