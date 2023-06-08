@@ -3,6 +3,7 @@
 @import url(rodape.css);
 @import url(style.css);
 
+
 @media (max-width: 2000px){
 
 body{
@@ -121,6 +122,12 @@ button{
 
     border-radius: 15px;
     border: solid #007922;
+ }
+
+ .status{
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+   
  }
     
 }
